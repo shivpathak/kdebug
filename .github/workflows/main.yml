@@ -20,6 +20,8 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+        env:
+          DOCKERHUB_REPOSITORY: shivpathak23/kdebug
       -
         name: Build and push
         id: docker_build
